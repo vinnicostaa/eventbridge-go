@@ -1,4 +1,4 @@
-module service2
+module github.com/vinnicostaa/eventbridge-go/service2
 
 go 1.26.4
 

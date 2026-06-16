@@ -1,6 +1,9 @@
 # Documentacao do Projeto
 
-Este diretorio centraliza a documentacao tecnica do workspace `nats-gin`.
+Este diretorio centraliza a documentacao tecnica do workspace `eventbridge-go`.
+
+Repositorio: `https://github.com/vinnicostaa/eventbridge-go`.
+Author: `Vinicius Oliveira <vinnicius.olliveira.costaa@outlook.com.br>`.
 
 O projeto demonstra um fluxo assincrono simples com tres servicos Go, Gin e NATS JetStream:
 
@@ -13,4 +16,3 @@ O projeto demonstra um fluxo assincrono simples com tres servicos Go, Gin e NATS
 - [architecture.md](./architecture.md): visao geral da arquitetura, fluxo atual e componentes.
 - [jetstream.md](./jetstream.md): configuracao atual da stream, subjects, publishers e consumers.
 - [verification.md](./verification.md): comandos usados para validar build, vet e smoke test local.
-

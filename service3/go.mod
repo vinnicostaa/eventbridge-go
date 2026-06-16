@@ -1,4 +1,4 @@
-module service3
+module github.com/vinnicostaa/eventbridge-go/service3
 
 go 1.26.4
 

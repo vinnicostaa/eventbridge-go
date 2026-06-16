@@ -1,6 +1,18 @@
-# Exemplo Go + Gin + NATS JetStream
+# eventbridge-go
 
-Este workspace demonstra um fluxo assíncrono simples com três serviços Go usando Gin, NATS e JetStream local:
+`eventbridge-go` demonstra um fluxo assíncrono simples com três serviços Go usando Gin, NATS e JetStream local.
+
+## Metadata
+
+- Repository: `https://github.com/vinnicostaa/eventbridge-go`
+- Author: `Vinícius Oliveira <vinnicius.olliveira.costaa@outlook.com.br>`
+- Developer signature: commits in this repository should use DCO-style `Signed-off-by` trailers.
+- Go module paths:
+  - `github.com/vinnicostaa/eventbridge-go/service1`
+  - `github.com/vinnicostaa/eventbridge-go/service2`
+  - `github.com/vinnicostaa/eventbridge-go/service3`
+
+## Serviços
 
 - `service1`: API HTTP com Gin. Recebe `POST /orders` e publica duas mensagens persistidas no JetStream:
   - um **evento** para o `service2` no subject `service2.orders.created`;
