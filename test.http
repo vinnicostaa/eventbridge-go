@@ -1,0 +1,15 @@
+### Health check
+GET http://localhost:3000/ping
+
+### Create order
+# service1 publica via JetStream:
+# - evento para service2 no subject service2.orders.created
+# - mensagem para service3 no subject service3.messages
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "customer": "Vinni",
+  "product": "Go + Gin + NATS JetStream",
+  "quantity": 1
+}
